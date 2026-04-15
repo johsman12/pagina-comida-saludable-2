@@ -31,6 +31,12 @@ function Productos() {
             digestión de forma natural.
           </p>
         </div>
+        <div className="producto">
+          <img src="https://i.pinimg.com/1200x/f6/1f/29/f61f294494ad722c44e8b97892df10a2.jpg"/>
+          <h3>Aneva Cremosa</h3>
+          <p>una bebida suave y nutritiva preparada con avena integral, un toque de canela fresca y miel organica.</p>
+
+        </div>
       </div>
     </div>
   );
