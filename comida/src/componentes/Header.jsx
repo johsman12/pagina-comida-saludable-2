@@ -2,9 +2,12 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header>
-      <h1>Tienda de Comida Saludable</h1>
-      <p>TU SALUD EMPIEZA AQUI</p>
+    <header className="tituloin">
+      <div>
+        <h1 className="unotitulo">TIENDA DE </h1>
+        <h1 className="unotitulo">COMIDA SALUDABLE</h1>
+        <p className="subtitulo">TU SALUD EMPIEZA AQUI</p>
+      </div>
     </header>
   );
 }

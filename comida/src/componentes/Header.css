@@ -7,10 +7,12 @@
   box-sizing:border-box;
   margin:0;
   padding:0;
+  outline: none;
 }
 
 body{
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #e8f5e9, #ffffff);
 }
 
@@ -18,7 +20,7 @@ header{
   text-align:center;
   padding:30px 20px;
   background: linear-gradient(135deg,var(--verde),var(--verde-osc));
-  color:white;
+  color:rgb(255, 255, 255);
 }
 
 nav{
@@ -63,22 +65,28 @@ nav button:hover{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:25px;
+  gap: 30px;
   max-width:1000px;
+  padding: 40px 20px;
 }
+
 
 .producto{
   background:white;
-  width:220px;
+  width:210px;
   padding:15px;
-  border-radius:15px;
+  border-radius:22px;
   text-align:center;
   box-shadow:0 6px 15px rgba(0,0,0,0.1);
   transition:0.3s;
+  overflow:hidden ;
+  border: none ;
+
 }
 
 .producto:hover{
-  transform:translateY(-5px);
+  transform:translateY(-10px);
+  box-shadow:0 20px 25px -5px rgba(22, 197, 95, 0.288) ; /* verde de fondo  */
 }
 
 .producto img{
@@ -90,19 +98,20 @@ nav button:hover{
 }
 
 .producto h3{
-  margin:8px 0;
+  margin: 15px 10px;
+  color: var(--verde-osc); /* v oscuro titulo */
 }
 
 .producto p{
-  color:#555;
-  margin-bottom:10px;
+  color:#64748b;
+  margin-bottom:5px;
 }
 
 .producto button{
-  width:100%;
+  width:85%;
   padding:10px;
   border:none;
-  border-radius:8px;
+  border-radius:12px;
   background:var(--verde);
   color:white;
   cursor:pointer;
@@ -119,4 +128,30 @@ footer{
   padding:15px;
   background:#1f2937;
   color:white;
+}
+.tituloin {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  background: linear-gradient(135deg, #08bd2fc0 10%, #053b03 100%); /* degradado */
+  justify-content: center;
+}
+
+.unotitulo {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.438);
+}
+
+.subtitulo {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.664);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.055);
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
