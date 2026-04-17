@@ -1,0 +1,169 @@
+#root{
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+
+}
+
+
+
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #474747, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.header-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding:10px 0px;
+  background-color: #ffffff;
+  color:white;
+  gap: 15px;
+  box-sizing: border-box;
+}
+.fila-superior{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  padding: 0 40px;
+
+  
+}
+.fila-superior, .navegacion{
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/*logo*/
+.img-logo{
+  width:170px;
+  height:auto;
+  max-width: 200px;
+  margin-bottom:10px;
+  display: block;
+}
+
+/*Navegación*/
+.navegacion{
+  background-color: #b8f3b8;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin: 0 20px;
+  
+}
+.navegacion ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  /* justify-content:center; */
+  gap:10px;
+  
+ 
+}
+.navegacion a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navegacion a:hover{
+  color: #6ec54c;
+  text-decoration: none;
+}
+
+/*boton de navegacion*/
+.btn-nav{
+  background-color: #6ec54c;
+  display: inline-block;
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  color: rgb(99, 99, 99);
+  
+
+
+}
+.btn-nav:hover{
+  transform: scale(1.1);
+  background-color: #6b6b6b;
+  box-shadow: 0 0 20px #76f145;
+
+}
+.btn-nav:active{
+  transform: scale(0.95);
+  
+
+}
+
+/* buscardor */
+.buscador{
+  display: flex;
+  flex: 2;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 100px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  
+
+}
+
+.buscador input{
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+
+}
+.buscador button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background: var(--verde);
+  background-color: #7afc59;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.buscador button:hover{
+  background-color: #134911;
+}
+
+/*iconos*/
+.grupo-iconos{
+  justify-content:flex-end ;
+  flex: 1;
+  display: flex;
+  padding-right: 100px;
+  gap: 15px;
+}
+.icono-user, .icono-carrito{
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.user, .carrito{
+  width: 40px;
+  height: auto;
+}
+.user{
+  width: 35px;
+}
+.carrito{ 
+  width: 35px;
+  filter: brightness(0) saturate(100%) invert(44%) sepia(92%) saturate(727%) hue-rotate(76deg) brightness(95%) contrast(95%);
+}
+.logo, .grupo-iconos{
+  flex: 1;
+  display: flex;
+}
