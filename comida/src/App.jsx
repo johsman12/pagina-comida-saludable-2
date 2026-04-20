@@ -8,11 +8,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header />
-      <Login />
-      <Botones />
-      <Productos />
-      <Footer />
+      {/* Usamos estas llaves para "apagar" lo que no queremos ver.
+          Si quitas las llaves de Header, volverá a aparecer arriba.
+      */}
+      
+      {/* <Header /> */}
+      {/* <Botones /> */}
+      
+      <Login /> 
+      
+      {/* <Productos /> */}
+      {/* <Footer /> */}
     </>
   );
 }

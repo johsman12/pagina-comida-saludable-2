@@ -1,27 +1,106 @@
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* Para que no pegue al fondo */
+/* 1. ESTRUCTURA (Tu código base) */
+.login-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.login-form {
-  background: #2a2a2a; /* Un tono oscuro como te gusta */
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  color: white;
+/* 2. LADO IZQUIERDO (Manteniendo tu logo grande y texto cerca) */
+.info-content {
+    flex: 1;
+    background: linear-gradient(135deg, #cadfb9, #637537); 
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px; 
 }
 
-.input-group {
-  margin-bottom: 1rem;
+.login-logo {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0px;
 }
 
-.login-btn {
-  background-color: #4CAF50; /* Verde saludable para Nutrik */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.info-content h1 {
+    font-size: 2.5rem;
+    margin: 5px; 
+    font-weight: 1000;
 }
+
+/* 3. LADO DERECHO */
+.login-form-side {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h2 {
+    color: #15592e;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* 4. ESTILO DE LOS INPUTS (La mejora estética que querías) */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 14px;
+    /* Cuadrito estético con borde suave */
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #637537;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(99, 117, 55, 0.1);
+}
+
+/* 5. TUS BOTONES ORIGINALES (Sin cambios, tal como pediste) */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #15592e; /* Tu verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(152, 173, 145, 0.678); /* Tu color original con transparencia */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
