@@ -1,0 +1,27 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Para que no pegue al fondo */
+}
+
+.login-form {
+  background: #2a2a2a; /* Un tono oscuro como te gusta */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.login-btn {
+  background-color: #4CAF50; /* Verde saludable para Nutrik */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

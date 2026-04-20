@@ -2,12 +2,14 @@ import Header from "./componentes/Header";
 import Botones from "./componentes/Botones";
 import Productos from "./componentes/Productos";
 import Footer from "./componentes/Footer";
+import Login from './componentes/Login';
 import "./App.css";
 
 function App() {
   return (
     <>
       <Header />
+      <Login />
       <Botones />
       <Productos />
       <Footer />
