@@ -1,0 +1,35 @@
+/* Para poner Edad, Peso y Estatura en la misma línea */
+.input-group-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field.small {
+  flex: 1;
+  margin-bottom: 0; /* Quitamos el margen inferior para que se alineen bien */
+}
+
+/* Estilo para los menús desplegables (select) */
+.select-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  color: #666; /* Color de texto más suave para las opciones */
+  cursor: pointer;
+  outline: none;
+}
+
+.select-field:focus {
+  border-color: var(--nutrik-green);
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+}
+
+/* Ajuste para que el formulario no sea tan alto en pantallas pequeñas */
+.form-content {
+  max-height: 90vh; 
+  overflow-y: auto; /* Permite scroll dentro del formulario si hay muchos campos */
+}
