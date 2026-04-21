@@ -12,6 +12,7 @@ import producto from "./img/Producto.svg"
 import dieta from "./img/Dieta.svg";
 import deseo from "./img/Deseo.svg";
 import carrito from "./img/Carrito03.svg";
+import busqueda from "./img/Busqueda.svg";
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
 
       <form className="buscador">
         <input type="text" placeholder="Buscar..." />
-        <button type="submit">Buscar</button>
+        <button type="submit"><img src={busqueda}alt="" /></button>
       </form>
       <div className="grupo-iconos">
         <div className="icono-user"  >
@@ -47,9 +48,9 @@ function Header() {
       </div>
       <nav className="navegacion">
         <ul>
-          <li><button className="btn-nav"><img src={categoria} alt="Categoría" width={15} height={15}  /><a href="">CATEGORIA</a></button></li>
-          <li><button className="btn-nav"><img src={producto} alt="Producto" width={15} height={15}  /><a href="">PRODUCTOS</a></button></li>
-          <li><button className="btn-nav"><img src={dieta} alt="Dieta" width={18} height={18}  /><a href="">DIETAS</a></button></li>
+          <li><button className="btn-nav"><img src={categoria} alt="Categoría" width={20} height={20}  /><a href="">CATEGORIA</a></button></li>
+          <li><button className="btn-nav"><img src={producto} alt="Producto" width={20} height={20}  /><a href="">PRODUCTOS</a></button></li>
+          <li><button className="btn-nav"><img src={dieta} alt="Dieta" width={20} height={20}  /><a href="">DIETAS</a></button></li>
 
           <div className="divisor"></div>
           <div className="nav-extra">
