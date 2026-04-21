@@ -109,3 +109,19 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+<<<<<<< HEAD
+=======
+
+/* Este código es como pasar una plancha: quita todas las arrugas (márgenes) */
+html, body, #root {
+    margin: 0 !important;   /* El !important obliga a quitar el margen */
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;     /* Evita que la página se mueva de lado */
+}
+
+* {
+    box-sizing: border-box; /* Fundamental para que los tamaños sean exactos */
+}
+>>>>>>> juliana
