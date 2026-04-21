@@ -1,14 +1,25 @@
 import "./Header.css";
-import logoNutrick from "./img/logoNutrick.png";
-import avatar from "./img/avatar.png";
-import carrito from "./img/carrito.png";
+// import logoNutrick from "./img/logoNutrick.png";
+import avatar from "./img/Usuario.svg";
+// import carrito from "./img/carrito.png";
+import logo from "./img/logoN.svg";
+import tienda from "./img/Tienda.svg";
+import nuevo from "./img/Nuevo.svg";
+import descuento from "./img/Descuento.svg";
+import sugerencias from "./img/Sugerencia.svg";
+import categoria from "./img/Categoria.svg";
+import producto from "./img/Producto.svg"
+import dieta from "./img/Dieta.svg";
+import deseo from "./img/Deseo.svg";
+import carrito from "./img/Carrito03.svg";
 
 function Header() {
   return (
     <header className="header-container">
       <div className="fila-superior">
       <div className="logo">
-        <img className="img-logo" src={logoNutrick} alt="Logo" title="img" />
+        {/* <img className="img-logo" src={logoNutrick} alt="Logo" title="img" /> */}
+        <img className="img-logo" src={logo} alt="Logo" title="Nutrick" />
       </div>
 
       <form className="buscador">
@@ -22,7 +33,11 @@ function Header() {
         <div className="icono-carrito">
           <img className="carrito" src={carrito} alt="Carrito" />
         </div>
+        
+          <img className="icono-circulo-deseo" src={deseo} alt="Deseo"  width={40} height={40} />
+        
       </div>
+      
 
 
 
@@ -32,11 +47,39 @@ function Header() {
       </div>
       <nav className="navegacion">
         <ul>
-          <button className="btn-nav"><a href="">inicio</a></button>
-          <button className="btn-nav"><a href="">recetas</a></button>
-          <button className="btn-nav"><a href="">contacto</a></button>
+          <li><button className="btn-nav"><img src={categoria} alt="Categoría" width={15} height={15}  /><a href="">CATEGORIA</a></button></li>
+          <li><button className="btn-nav"><img src={producto} alt="Producto" width={15} height={15}  /><a href="">PRODUCTOS</a></button></li>
+          <li><button className="btn-nav"><img src={dieta} alt="Dieta" width={18} height={18}  /><a href="">DIETAS</a></button></li>
+
+          <div className="divisor"></div>
+          <div className="nav-extra">
+
+          
+          <li className="nav-extra">
+            <span className="icono-circulo"><img src={tienda} alt="Tienda" /></span>
+            <a href="#">Tienda</a>
+          </li>
+
+          <li className="nav-extra">
+            <span className="icono-circulo"><img src={nuevo} alt="Nuevo" /></span>
+            <a href="#">Lo nuevo</a>
+          </li>
+
+          <li className="nav-extra">
+            <span className="icono-circulo"><img src={descuento} alt="Descuento" /></span>
+            <a href="#">Descuento</a>
+          </li>
+
+          <li className="nav-extra">
+            <span className="icono-circulo"><img src={sugerencias} alt="Sugerencias" /></span>
+            <a href="#">Sugerencias</a>
+          </li>
+        </div>
+
+
 
         </ul>
+        
       </nav>
 
     </header>
