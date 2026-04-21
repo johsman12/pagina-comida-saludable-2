@@ -8,17 +8,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* Usamos estas llaves para "apagar" lo que no queremos ver.
-          Si quitas las llaves de Header, volverá a aparecer arriba.
+      {/* Aquí combinamos: 
+          Mantenemos los componentes de Master activos 
+          y dejamos tu Login también.
       */}
-      
-      {/* <Header /> */}
-      {/* <Botones /> */}
+      <Header />
+      <Botones />
       
       <Login /> 
       
-      {/* <Productos /> */}
-      {/* <Footer /> */}
+      <Productos />
+      <Footer />
     </>
   );
 }
