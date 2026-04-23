@@ -42,7 +42,7 @@ function Header() {
 
 
 
-
+       {/* NarBar inferior       */}
 
       </div>
       <nav className="navegacion">
