@@ -9,12 +9,15 @@
 
 body{
   font-family: Arial, sans-serif;
-  background: linear-gradient(170deg, #6afd6a, #ffffff);
+  background: linear-gradient(170deg, #474747, #5c5c5c);
   margin: 0;
   padding: 0;
 }
 
 .header-container{
+  
+  
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -62,7 +65,7 @@ body{
 
   justify-content: flex-start;
   align-items: center;
-  background-color: #6afd6a;
+  background-color: #267700;
   border-radius: 50px;
   padding: 5px 10px;
   margin: 0 20px;
@@ -101,7 +104,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   margin-left: auto;
-  color: #1b8f0c;
+  color: #ffffff;
   /* font-weight: 500; */
   font-size: 14px;
   font-weight:bold;
@@ -120,7 +123,7 @@ body{
 }
 .nav-extra a:hover{
   
-  color: #ffffff;
+  color: #bbff00;
 }
 /* .nav-extra:active a{
   transform: scale(0.95);
@@ -150,7 +153,7 @@ body{
 /*boton de navegacion*/
 .btn-nav{
   align-items: center;
-  background-color: #39c900;
+  background-color: #1b9b0a;
   display: flex;
   border: none;
   padding: 2px 10px;
@@ -167,7 +170,7 @@ body{
 
 .btn-nav:hover{
   transform: scale(1.1);
-  background-color: #026e0b;
+  background-color: #257a1f;
   box-shadow: 0 0 20px #ffffff;
 
 
@@ -212,14 +215,14 @@ body{
   border: none;
   border-radius: 0 4px 4px 0;
   background: var(--verde);
-  background-color: #4eac36;
+  background-color: #267700;
   color: white;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 .buscador button:hover{
-  background-color: #047e00;
+  background-color: #629700;
 }
 
 /*iconos*/
